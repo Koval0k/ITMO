@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Alexandr/Desktop/ITMO/1 semester/Programming/lab3/lab3/src</OriginalElement>
+  <nodes>
+    <node x="-44.0" y="682.5">Movable</node>
+    <node x="388.0" y="222.0">Policeman</node>
+    <node x="-58.0" y="1114.0">Car</node>
+    <node x="256.5" y="-14.0">Location</node>
+    <node x="375.5" y="1162.5">Neznayka</node>
+    <node x="-65.0" y="174.0">Crowd</node>
+    <node x="275.5" y="518.0">Human</node>
+    <node x="453.0" y="694.5">Main</node>
+    <node x="170.0" y="882.0">ShortGuy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ShortGuy" target="Movable" relationship="REALIZATION">
+      <point x="-73.5" y="-104.0" />
+      <point x="243.5" y="846.0" />
+      <point x="37.0" y="846.0" />
+      <point x="0.0" y="43.5" />
+    </edge>
+    <edge source="ShortGuy" target="Human" relationship="GENERALIZATION">
+      <point x="73.5" y="-104.0" />
+      <point x="390.5" y="846.0" />
+      <point x="397.0" y="846.0" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="Neznayka" target="Human" relationship="GENERALIZATION">
+      <point x="0.0" y="-43.5" />
+      <point x="497.0" y="846.0" />
+      <point x="397.0" y="846.0" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="Car" target="Movable" relationship="REALIZATION">
+      <point x="0.0" y="-92.0" />
+      <point x="0.0" y="43.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.3885135135135135" showDependencies="false" x="288.0" y="765.8000000000001" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
