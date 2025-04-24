@@ -1,0 +1,3 @@
+id,name,coordinate_x,coordinate_y,creation_date,health,heart_count,achievements,weapon_type,chapter_name,chapter_world
+1,"Odyssey",250,444,2025-04-21T06:15:33.4728188,250.0,3,"Asteroid Conqueror",PLASMA_GUN,"Homecoming","Far Galaxy"
+12,"MoonWalker",1000,12,2025-04-21T06:38:59.6158903,50.0,2,"Moon Researcher",GRAV_GUN,"Exploration","Moon"

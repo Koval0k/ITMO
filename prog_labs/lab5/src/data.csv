@@ -1,0 +1,3 @@
+id,name,coordinate_x,coordinate_y,creation_date,health,heart_count,achievements,weapon_type,chapter_name,chapter_world
+1,"Moonwalker",100,100,2025-04-24T20:07:49.8560619,100.0,2,"Moon researcher",GRAV_GUN,"Dark side exploring","Dark side of the Moon"
+2,"Millennium Falcon",1000,444,2025-04-24T20:07:49.8634062,1000.0,3,"Destroyer of the Death Star",BOLT_RIFLE,"The rise of the Empire","Far Far Galaxy"

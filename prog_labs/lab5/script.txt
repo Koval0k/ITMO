@@ -1,0 +1,55 @@
+clear
+yes
+insert 1
+Moonwalker
+100
+2
+Moon researcher
+100
+100
+yes
+Dark side exploring
+Dark side of the Moon
+GRAV_GUN
+insert 2
+Millennium Falcon
+1000
+3
+Destroyer of the Death Star
+1000
+444
+yes
+The rise of the Empire
+Far Far Galaxy
+BOLT_RIFLE
+insert 3
+Kars
+1000000
+
+Immortal
+-1000
+-200
+no
+FLAMER
+update 3
+Kars
+1000000
+
+Immortal
+-900
+-100
+yes
+Josef Joestar fight
+Outer Space
+FLAMER
+print_ascending
+remove_key 3
+yes
+info
+group_counting_by_id
+remove_greater_key 3
+print_field_descending_weapon_type
+execute_script script.txt
+save
+exit
+yes

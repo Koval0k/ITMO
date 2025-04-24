@@ -1,0 +1,3 @@
+javac -d bin src\Main.java src\SpaceMarine\*.java src\utils\*.java src\commands\*.java
+set COLLECTION_FILE=src\data.csv
+java -cp bin Main
