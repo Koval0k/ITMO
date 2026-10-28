@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лабораторная работа №2</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+
+<table id="layout">
+    <tr>
+        <td colspan="3" class="header-cell">
+            <div class="topbar">
+                <div id="info">
+                    <b>Ковалев Александр</b>
+                    <span>P3230 · Var. 47339</span>
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr class="main-row">
+
+        <td class="card input-section">
+            <h2>Point parameters</h2>
+            <form action="/fcgi-bin/lab1.jar" method="GET" id="data-form" novalidate>
+                <table id="form-layout">
+                    <tr>
+                        <th scope="row"><label for="x">X coordinate</label></th>
+                        <td>
+                            <input type="text" id="x" name="x" required pattern="-?\d{1,2}(\.\d+)?" placeholder="-5 to 3" autocomplete="off">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Y</th>
+                        <td>
+                            <fieldset id="ys">
+                                <legend class="visually-hidden">Select the Y parameter</legend>
+                                <div class="chips">
+                                    <label class="chip"><input type="radio" name="Y" value="-3"><span>-3</span></label>
+                                    <label class="chip"><input type="radio" name="Y" value="-2"><span>-2</span></label>
+                                    <label class="chip"><input type="radio" name="Y" value="-1"><span>-1</span></label>
+                                    <label class="chip"><input type="radio" name="Y" value="0" checked><span>0</span></label>
+                                    <label class="chip"><input type="radio" name="Y" value="1"><span>1</span></label>
+                                    <label class="chip"><input type="radio" name="Y" value="2"><span>2</span></label>
+                                    <label class="chip"><input type="radio" name="Y" value="3"><span>3</span></label>
+                                    <label class="chip"><input type="radio" name="Y" value="4"><span>4</span></label>
+                                    <label class="chip"><input type="radio" name="Y" value="5"><span>5</span></label>
+                                </div>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">R</th>
+                        <td>
+                            <fieldset id="rs">
+                                <legend class="visually-hidden">Select the R parameter</legend>
+                                <div class="chips">
+                                    <label class="chip"><input type="radio" name="R" value="1" checked><span>1</span></label>
+                                    <label class="chip"><input type="radio" name="R" value="1.5"><span>1.5</span></label>
+                                    <label class="chip"><input type="radio" name="R" value="2"><span>2</span></label>
+                                    <label class="chip"><input type="radio" name="R" value="2.5"><span>2.5</span></label>
+                                    <label class="chip"><input type="radio" name="R" value="3"><span>3</span></label>
+                                </div>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Check point</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div id="error"></div>
+        </td>
+
+        <td class="card center-section">
+            <canvas id="graph"></canvas>
+        </td>
+
+        <td class="card results-section">
+            <h2>Results</h2>
+            <div class="table-wrap">
+                <table id="result-table">
+                    <tr>
+                        <th>x</th>
+                        <th>y</th>
+                        <th>r</th>
+                        <th>time</th>
+                        <th>exec time</th>
+                        <th>result</th>
+                    </tr>
+                </table>
+            </div>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td colspan="3" id="copyright">
+            no rights reserved, ITMO 2026
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

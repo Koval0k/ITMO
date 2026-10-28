@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Лабораторная работа №1</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <script defer src="index.js"></script>
+    </head>
+    <body>
+
+    <nav class="topbar">
+        <div id="info">
+            <b>Ковалев Александр P3230 Var. 23686</b>
+        </div>
+    </nav>
+
+    <main class="container">
+    <section class="input-section">
+        <form id="data-form" novalidate>
+            <fieldset id="x">
+                <legend>Select X:</legend>
+                <select name="x" id="xs">
+                <option value="-2">-2</option>
+                <option value="-1.5">-1.5</option>
+                <option value="-1">-1</option>
+                <option value="-0.5">-0.5</option>
+                <option value="0" selected>0</option>
+                <option value="0.5">0.5</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                </select>
+            </fieldset>
+            <label for="y">Enter Y:</label>
+            <input type="text" id="y" name="y" required pattern="-?\d{1,2}(\.\d+)?" placeholder="-5 to 5">
+  <fieldset id="rs">
+  <legend>Select the R parametr:</legend>
+        <input type="button" name="r" value="1">
+        <input type="button" name="r" value="1.5">
+        <input type="button" name="r" value="2">
+        <input type="button" name="r" value="2.5">
+        <input type="button" name="r" value="3">
+    </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="error">
+        </div>
+    </section>
+    <section class="center-section"> 
+                <canvas id="graph" width="400" height="400"></canvas>
+            </section>
+    <section class="results-section">
+        <table id="result-table">
+            <tr>
+                <th>x</th>
+                <th>y</th>
+                <th>r</th>
+                <th>time</th>
+                <th>result</th>
+            </tr>
+        </table>
+    </section>
+</main>
+<footer id="copyright">
+  no rights reserved, ITMO 2026
+</footer>
+    </body>
+</html>
